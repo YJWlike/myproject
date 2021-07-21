@@ -1,3 +1,5 @@
 dist/
 doc/*.pdf
 /index.js
+/00.html
+/88.html
