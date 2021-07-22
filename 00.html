@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = "NEVER SAY DIE";
+      // str = str.split(" ");
+      let str1 = "HELLO WORLD";
+      // let array = str.map((value) => {
+      //   let newstr = value.split("").reverse().join("");
+      //   // arr = arr.reverse();
+      //   // let newstr = arr.join("");
+      //   return newstr;
+      // });
+      // console.log(array.join("-"));
+      let arr1 = []; // 用于接收翻转后的每个数组元素
+
+      function changestr(string, flag) {
+        string = string.toLowerCase().split(" ");
+        if (flag) {
+          string = string.join("-");
+          return console.log(string);
+        } else {
+          let array = string.map((value) => {
+            let newstr = value.split("").reverse().join("");
+            return newstr;
+          });
+          console.log(array.join("-"));
+        }
+      }
+      changestr(str, false);
+      // function change(str) {
+      //   str = str.toLowerCase();
+      //   str = str.split(" ");
+      //   str = str.join("-");
+      //   return console.log(str);
+      // }
+      // change(str);
+
+      // function reversechange(str) {
+      //   str = str.toLowerCase();
+      //   str = str.split(" ");
+      //   str.forEach((value) => {
+      //     let arr = value.split("");
+      //     arr = arr.reverse();
+      //     arr = arr.join("");
+      //     arr1.push(arr);
+      //   });
+      //   arr1 = arr1.join("-");
+      //   return console.log(arr1);
+      // }
+      // reversechange(str1);
+    </script>
+  </body>
+</html>
